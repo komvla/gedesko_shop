@@ -1,0 +1,45 @@
+.wrapper {
+  .card {
+    display: flex;
+    margin: 0.75rem 0;
+    padding: 1rem;
+
+    .image {
+      object-fit: contain;
+      height: 10rem;
+      max-width: 100%;
+      margin: 2rem;
+    }
+
+    display: flex;
+    flex-direction: column;
+    .title {
+      font-size: 18px;
+      height: 3rem;
+    }
+    .cardFooter {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .subtitle {
+        font-weight: bold;
+        font-family: monospace;
+        text-align: right;
+        font-size: 21px;
+
+        small {
+          font-size: 14px;
+        }
+      }
+      .button {
+      }
+    }
+
+    .text {
+      font-size: 14px;
+      height: 2rem;
+    }
+  }
+}
