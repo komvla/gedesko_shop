@@ -20,10 +20,10 @@ const ProductDetailsBox = (element: { product: ProductInfo }) => {
   return (
     <Col className={styles.wrapper} lg={12}>
     <Row className={styles.headerActions}>
-        <Col lg={1}><Button onClick={() => navigate('/')}  color="success">Go back</Button></Col>
+        <Button  className={styles.button} size='md' onClick={() => navigate('/')} color="success"><span>Go back</span></Button>
     </Row>
       <Card className={styles.card}>
-        <Row>
+        <div className={styles.cardContent}>
             <Col>
         <img className={styles.image} alt="ProductIMG" src={image} />
             </Col>
@@ -39,7 +39,7 @@ const ProductDetailsBox = (element: { product: ProductInfo }) => {
            </CardSubtitle>
         </CardBody>            
             </Col>
-        </Row>
+        </div>
 
       </Card>
     </Col>

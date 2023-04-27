@@ -1,3 +1,5 @@
+@import './styles/mixins.scss';
+
 .App {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
