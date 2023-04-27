@@ -42,6 +42,7 @@ const ProductTable: React.FC = () => {
   }, []);
 
   useEffect(() => {
+    setCurrentPage(1)
     fetchProducts(selectedCategory);
   }, [selectedCategory]);
 
