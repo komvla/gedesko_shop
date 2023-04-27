@@ -1,0 +1,13 @@
+.wrapper{
+    margin-top: 0.75rem;
+    justify-content: center;
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        p{
+            margin: 0 !important;
+        }
+    }
+}

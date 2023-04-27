@@ -3,6 +3,8 @@ import styles from './CategoriesList.module.scss';
 import { getAllCategories } from '../../api';
 import { Container, Row, Col, Button } from 'reactstrap';
 import { useSelector, useDispatch } from 'react-redux';
+import { Filters } from '../../models/filter.models';
+
 
 const CategoriesList: React.FC = () => {
   const [categories, setCategories] = useState<String[]>([]);
@@ -32,7 +34,14 @@ const CategoriesList: React.FC = () => {
   };
 
   function handleCategoryClick(category: String) {
+    let defaultPayload: Filters = {      
+      price: null,
+      rating: null,
+      reviews: null
+  }
     dispatch({ type: 'SET_SELECTED_CATEGORY', payload: category });
+    dispatch({ type: 'SET_ACTIVE_FILTER', payload: defaultPayload });
+
   }
 
 

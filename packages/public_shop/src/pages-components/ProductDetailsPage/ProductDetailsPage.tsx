@@ -40,6 +40,7 @@ const ProductDetailsPage = () => {
     <>
     <Header/>
     <Container>
+      
     {isLoading ? (
         <LoaderBox text={"Loading product information"} />
       ) : error ? (
