@@ -27,7 +27,10 @@ const ProductList: React.FC = () => {
 
   
   useEffect(() => {
-    let activeFilter = findActiveFilter(currentFilter); 
+    handleFilters(findActiveFilter(currentFilter))
+  }, [currentFilter])
+
+  function handleFilters (activeFilter : string | null) {
     console.log(currentFilter, activeFilter);
     if( activeFilter === 'price'){
       let sorted =  [...products].sort((a, b) => a.price - b.price)
@@ -48,7 +51,7 @@ const ProductList: React.FC = () => {
       fetchProducts(selectedCategory ? selectedCategory : 'all');
     }
 
-  }, [currentFilter])
+  }
   
 
 
