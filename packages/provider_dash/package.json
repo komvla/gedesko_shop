@@ -51,6 +51,5 @@
     "node-sass": "^7.0.3",
     "prettier": "^2.8.8",
     "react-router-dom": "^6.10.0"
-  },
-  "proxy": "http://localhost:5000"
+  }
 }
