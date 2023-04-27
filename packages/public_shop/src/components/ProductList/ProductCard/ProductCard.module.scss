@@ -15,6 +15,7 @@
     flex-direction: column;
     .title {
       font-size: 18px;
+      font-weight: bold;
       height: 3rem;
     }
     .cardFooter {
@@ -37,8 +38,9 @@
       }
     }
 
-    .text {
+    .category {
       font-size: 14px;
+      color: gray;
       height: 2rem;
     }
   }

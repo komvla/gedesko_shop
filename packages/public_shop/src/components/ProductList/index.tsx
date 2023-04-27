@@ -16,7 +16,7 @@ const ProductList: React.FC = () => {
 
 
   useEffect(() => {
-    fetchProducts('all');
+    fetchProducts(selectedCategory ? selectedCategory : 'all');
   }, []);
 
   useEffect(()=>{

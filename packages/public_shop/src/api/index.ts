@@ -4,7 +4,7 @@
 export const getAllProducts = () => 'https://fakestoreapi.com/products';
 
 // Get a specific product (replace {id} with the product identification number)
-export const getProduct = (id: number) =>
+export const getProduct = (id: string | undefined) =>
   `https://fakestoreapi.com/products/${id}`;
 
 // Get all categories

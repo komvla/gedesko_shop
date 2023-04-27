@@ -1,29 +1,30 @@
 .wrapper {
+    margin: 2rem 0 10rem 0;
     .card {
       display: flex;
+      flex-direction: row;
+      height: 100%;
       margin: 0.75rem 0;
-      padding: 1rem;
+      padding: 3rem;
   
       .image {
         object-fit: contain;
-        height: 10rem;
+        height: 25rem;
         max-width: 100%;
-        margin: 2rem;
       }
-  
-      display: flex;
-      flex-direction: column;
-      .title {
-        font-size: 18px;
-        height: 3rem;
-      }
-      .cardFooter {
+      .body{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        text-align: left;
         justify-content: space-between;
-        align-items: center;
-  
-        .subtitle {
+        height: 100%;
+        padding-right: 2rem;
+      .title {
+        font-size: 28px;
+
+      }
+
+        .price {
           font-weight: bold;
           font-family: monospace;
           text-align: right;
@@ -33,14 +34,16 @@
             font-size: 14px;
           }
         }
-        .button {
-        }
-      }
-  
-      .text {
+
+      .category {
+        font-size: 18px;
+        color: gray;
+      } 
+
+      .description {
         font-size: 14px;
-        height: 2rem;
-      }
+        }
     }
   }
+}
   

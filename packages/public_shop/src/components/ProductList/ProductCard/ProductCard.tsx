@@ -32,7 +32,7 @@ const ProductCard = (element: { product: ProductInfo }) => {
             {truncate(title, 40)}
           </CardTitle>
 
-          <CardText className={styles.text}>{category}</CardText>
+          <CardText className={styles.category}>{category.toUpperCase()}</CardText>
           <footer className={styles.cardFooter}>
             <Button
               className={styles.button}
