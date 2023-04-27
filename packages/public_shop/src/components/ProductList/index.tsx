@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { getAllProducts, getProductsByCategory } from '../../api';
 import { ProductInfo } from '../../models/product.models';
 import { Filters } from '../../models/filter.models';
-import { Container, Row } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import Card from './ProductCard/ProductCard';
 import LoaderBox from '../LoaderBox/LoaderBox';
 import ErrorBox from '../ErrorBox/ErrorBox';
 import { useSelector } from 'react-redux';
+import styles from './ProductList.module.scss'
 
 const ProductList: React.FC = () => {
   const [products, setProducts] = useState<ProductInfo[] >([]);
@@ -50,10 +51,7 @@ const ProductList: React.FC = () => {
     else {
       fetchProducts(selectedCategory ? selectedCategory : 'all');
     }
-
   }
-  
-
 
   function findActiveFilter(filters: Filters | any): string | null {
     for (const filterName in filters) {
@@ -79,7 +77,7 @@ const ProductList: React.FC = () => {
   };
 
   return (
-    <Container>
+    <Container className={styles.wrapper}>
       {isLoading ? (
         <LoaderBox text={selectedCategory !== 'all' ? `Loading ${selectedCategory}` : "Loading products..."} />
       ) : error ? (
