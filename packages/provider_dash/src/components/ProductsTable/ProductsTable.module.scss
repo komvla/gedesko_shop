@@ -1,0 +1,44 @@
+.wrapper {
+    min-height: 70vh;
+.table{
+    margin-top: 5rem;
+    .thead{
+        .thTitle{
+            cursor: pointer;
+            width: 30rem;
+            text-align: left;
+            border-right: 1px solid gray;
+        }
+        .thCategory{
+            width: 10rem;
+            border-right: 1px solid gray;
+
+        }
+        .thPrice{
+            cursor: pointer;
+            text-align: right;
+            width: 10rem;
+
+        }
+    }
+    .tbody{
+        .tdTitle{
+            cursor: pointer;
+            width: 30rem;
+            text-align: left;
+            border-right: 1px solid gray;
+        }
+        .tdCategory{
+            width: 10rem;
+            border-right: 1px solid gray;
+
+        }
+        .tdPrice{
+            cursor: pointer;
+            text-align: right;
+            width: 10rem;
+
+        }
+    }
+}    
+}
